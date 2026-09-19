@@ -4,6 +4,8 @@
 
 It **complements** the Solo Freelancer Cashflow Kit (and similar SKUs). Do not treat this repo as a competing cashflow/finance spreadsheet product.
 
+**New:** [BUYER_README.md](BUYER_README.md) (listing ↔ download alignment) · [HOW_TO_SELL.md](HOW_TO_SELL.md) (short sell path)
+
 ## Quick start
 
 ```bash
@@ -20,7 +22,7 @@ Smoke / regenerate the Cashflow Kit listing drafts:
 make demo
 ```
 
-## What’s inside
+## What's inside
 
 | Path | Role |
 | --- | --- |
@@ -28,6 +30,8 @@ make demo
 | `templates/` | Etsy + Gumroad prompt skeletons |
 | `checklists/launch.md` | Ship checklist for first sale |
 | `examples/` | Sample listing draft for Solo Freelancer Cashflow Kit @ $19 |
+| `BUYER_README.md` | Keep marketplace claims honest vs the buyer zip |
+| `HOW_TO_SELL.md` | Short how-to-sell path for this kit |
 | `scripts/demo.sh` | Runs `listing.py` for that product and prints output paths |
 
 ## Example: Solo Freelancer Cashflow Kit @ $19
@@ -44,4 +48,4 @@ See `examples/solo-freelancer-cashflow-kit-listing.md` for a checked-in draft yo
 
 ## Money angle
 
-Distribution layer for whatever digital SKU you’re selling. Pair with the Cashflow Kit (or any PDF/sheet product) instead of being another finance template.
+Distribution layer for whatever digital SKU you're selling. Pair with the Cashflow Kit (or any PDF/sheet product) instead of being another finance template.
