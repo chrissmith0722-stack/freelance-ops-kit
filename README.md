@@ -1,8 +1,8 @@
-# marketplace-listing-kit
+# freelance-ops-kit → marketplace listing kit
 
-(Formerly freelance-ops-kit — re-aimed so it does not compete with the Solo Freelancer Cashflow Kit.)
+**Re-aim:** this repo is no longer an invoice/ops/finance-template product. It is a **marketplace listing kit** — copy + SEO helpers for listing a digital product on **Etsy** and **Gumroad** (titles, tags, descriptions, launch checklist).
 
-Copy + SEO helpers for listing a digital product on **Etsy** and **Gumroad**: titles, tags, descriptions, and a simple launch checklist.
+It **complements** the Solo Freelancer Cashflow Kit (and similar SKUs). Do not treat this repo as a competing cashflow/finance spreadsheet product.
 
 ## Quick start
 
@@ -10,13 +10,37 @@ Copy + SEO helpers for listing a digital product on **Etsy** and **Gumroad**: ti
 python3 listing.py --product "Solo Freelancer Cashflow Kit" --price 19 --platform both
 ```
 
-Writes draft listing fields under `./out/`.
+Writes draft listing fields under `./out/` (gitignored). A committed sample lives in `examples/`.
+
+Smoke / regenerate the Cashflow Kit listing drafts:
+
+```bash
+./scripts/demo.sh
+# or
+make demo
+```
 
 ## What’s inside
 
-- `listing.py` — generates title options, tags, short/long description drafts
-- `templates/` — Etsy + Gumroad prompt skeletons
-- `checklists/launch.md` — ship checklist for first sale
+| Path | Role |
+| --- | --- |
+| `listing.py` | Generates title options, tags, short/long description drafts |
+| `templates/` | Etsy + Gumroad prompt skeletons |
+| `checklists/launch.md` | Ship checklist for first sale |
+| `examples/` | Sample listing draft for Solo Freelancer Cashflow Kit @ $19 |
+| `scripts/demo.sh` | Runs `listing.py` for that product and prints output paths |
+
+## Example: Solo Freelancer Cashflow Kit @ $19
+
+```bash
+python3 listing.py \
+  --product "Solo Freelancer Cashflow Kit" \
+  --price 19 \
+  --platform both \
+  --out out
+```
+
+See `examples/solo-freelancer-cashflow-kit-listing.md` for a checked-in draft you can paste into Etsy/Gumroad and edit.
 
 ## Money angle
 
